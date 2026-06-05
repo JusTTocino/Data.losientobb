@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TecnoFuturo | Tecnologías</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">TecnoFuturo</span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tecnologias.html">Tecnologías</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="hero" style="padding:3rem 2rem 2.5rem;">
+    <div class="hero-inner">
+      <h1>Tecnologías Modernas</h1>
+      <p>Un recorrido por las innovaciones que están cambiando el mundo hoy.</p>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <h2 class="seccion-titulo">Explora las Innovaciones</h2>
+    <p class="seccion-subtitulo">Haz clic en "Saber más" para descubrir detalles de cada tecnología.</p>
+
+    <div class="cards-grid">
+
+
+      <article class="card" id="ia">
+        <div class="card-img-placeholder"> <img src="https://www.iebschool.com/hub/wp-content/uploads/2024/11/image-38.jpg" width="500" height="600"> </div>
+        <div class="card-body">
+          <h3>Inteligencia Artificial</h3> <br>
+          <p>La IA permite a las máquinas aprender patrones y tomar decisiones. Desde chatbots hasta diagnósticos médicos, su impacto es global.</p>
+          <div class="detalle-extra">
+            La IA y el Machine Learning procesan enormes conjuntos de datos para reconocer patrones. ChatGPT, Gemini y otros modelos de lenguaje son ejemplos recientes. Sus aplicaciones incluyen detección de cáncer, traducción automática, conducción autónoma y mucho más.
+          </div>
+          <button class="btn btn-outline" onclick="toggleDetalle(this)">Saber más ▼</button>
+        </div>
+      </article>
+
+
+      <article class="card" id="iot">
+        <div class="card-img-placeholder"> <img src="https://images.ctfassets.net/5i1m3im8l2b5/2g17zgCFVcG2WdFZ5quItK/8c62eaa94bbf18d19a2a441dc32ae58e/What_is_IoT.jpg?w=1200&h=630&fl=progressive&q=50&fm=jpg" width="500" height="600"> </div>
+        <div class="card-body"> <br>
+    <h3>Internet de las Cosas (IoT)</h3>
+    <p>Electrodomésticos, sensores y vehículos conectados a internet que se comunican entre sí para automatizar procesos.</p>
+          <div class="detalle-extra">
+            Los hogares inteligentes usan IoT para ajustar temperatura, apagar luces o detectar intrusos. En industria, los sensores conectados monitorizan maquinaria en tiempo real reduciendo fallos. Se estima que en 2030 habrá más de 25 000 millones de dispositivos IoT activos.
+          </div>
+          <button class="btn btn-outline" onclick="toggleDetalle(this)">Saber más ▼</button>
+        </div>
+      </article>
+
+
+      <article class="card" id="ar">
+        <div class="card-img-placeholder"> <img src="https://img.impactotic.co/wp-content/uploads/2023/07/06174649/Realidad-Virtual.jpg" width="500" height="600"> </div>
+        <div class="card-body"> <br>
+          <h3>Realidad Aumentada / Virtual</h3>
+          <p>Combina elementos digitales con el entorno físico (AR) o crea mundos completamente virtuales (VR) para experiencias inmersivas.</p>
+          <div class="detalle-extra">
+            La RA se usa en cirugías guiadas, mantenimiento industrial y educación. La RV revoluciona el entrenamiento militar, la terapia de fobias y el entretenimiento. Empresas como Meta, Apple y Microsoft compiten en este espacio con gafas de próxima generación.
+          </div>
+          <button class="btn btn-outline" onclick="toggleDetalle(this)">Saber más ▼</button>
+        </div>
+      </article>
+
+
+      <article class="card" id="solar">
+        <div class="card-img-placeholder"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEC1HEEnIR-ByzSUD6JvPxDNEHUKFGGmfWiQ&s" width="500" height="600"> </div>
+        <div class="card-body"> <br>
+          <h3>Energía Solar y Eólica</h3>
+          <p>Las fuentes de energía renovable aprovechan el sol y el viento para generar electricidad limpia y sostenible.</p>
+          <div class="detalle-extra">
+            Los paneles fotovoltaicos convierten la luz solar en electricidad. La energía eólica usa turbinas que giran con el viento. Juntas, estas fuentes ya representan más del 30% de la generación eléctrica en varios países europeos. La calculadora de este sitio puede ayudarte a estimar producción solar.
+          </div>
+          <button class="btn btn-outline" onclick="toggleDetalle(this)">Saber más ▼</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img-placeholder"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBiEdAm1sP6M6we2SYWZ34pEJayDcs-8KNig&s" width="500" height="600"> </div>
+        <div class="card-body"> <br>
+          <h3>Blockchain y Criptomonedas</h3>
+          <p>Registro distribuido e inmutable que permite transacciones seguras sin intermediarios bancarios.</p>
+          <div class="detalle-extra">
+            Bitcoin fue la primera criptomoneda basada en blockchain (2009). Hoy, la tecnología se aplica en contratos inteligentes, trazabilidad de alimentos, votación electrónica y registros médicos. Ethereum permite ejecutar código descentralizado conocido como "contratos inteligentes".
+          </div>
+          <button class="btn btn-outline" onclick="toggleDetalle(this)">Saber más ▼</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img-placeholder"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT94yR6EDww8qkF7jzPSPLpmRs8Agvt8g3x8g&s" width="500" height="600"> </div>
+        <div class="card-body"> <br>
+          <h3>5G y Conectividad</h3>
+          <p>La quinta generación de redes móviles ofrece velocidades hasta 100× mayores que 4G y latencias mínimas.</p>
+          <div class="detalle-extra">
+            5G es la base para ciudades inteligentes, cirugías remotas y vehículos autónomos. Permite conectar miles de dispositivos por km² sin degradación. México comenzó su despliegue en ciudades como Monterrey, CDMX y Guadalajara a partir de 2022.
+          </div>
+          <button class="btn btn-outline" onclick="toggleDetalle(this)">Saber más ▼</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img-placeholder"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEI3o5vEmNzTQF0dGh4erZceqtNWinHd85ig&s" width="500" height="600"> </div>
+        <div class="card-body"> <br>
+          <h3>Vehículos Autónomos</h3>
+          <p>Automóviles capaces de conducirse solos usando cámaras, LiDAR, radar e inteligencia artificial.</p>
+          <div class="detalle-extra">
+            Tesla, Waymo y otros fabricantes prueban vehículos nivel 4 y 5 de autonomía. Estos coches procesan datos de sensores en tiempo real para navegar sin intervención humana. Prometen reducir accidentes de tráfico en más de un 90% al eliminar el error humano como causa principal.
+          </div>
+          <button class="btn btn-outline" onclick="toggleDetalle(this)">Saber más ▼</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img-placeholder"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoxmWR2muV35Z7WU3hTiWwD3rtj99uSJYxoQ&s" width="500" height="600"> </div>
+        <div class="card-body"> <br>
+          <h3>Impresión 3D</h3> 
+          <p>Fabricación aditiva que permite crear objetos físicos capa a capa a partir de modelos digitales.</p>
+          <div class="detalle-extra">
+            Se usa para prótesis médicas personalizadas, piezas aeroespaciales, joyería y hasta casas enteras. La bioimpresión 3D experimenta con tejidos humanos para trasplantes. Los costos han bajado tanto que hoy una impresora 3D básica está al alcance de estudiantes y makers.
+          </div>
+          <button class="btn btn-outline" onclick="toggleDetalle(this)">Saber más ▼</button>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="separador" style="margin-top:3rem;">✦ ✦ ✦</div>
+
+    <p style="text-align:center; margin-top:2rem;">
+      <a href="calculadora.html" class="btn btn-verde">Calcular producción solar </a>
+    </p>
+  </section>
+
+
+  <footer>
+    <div class="footer-inner">
+      <nav class="footer-nav">
+        <a href="index.html">Inicio</a>
+        <a href="tecnologias.html">Tecnologías</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="calculadora.html">Calculadora</a>
+      </nav>
+      <p>TecnoFuturo &copy; <span id="anio"></span> — Proyecto escolar CBTIS No. 37</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

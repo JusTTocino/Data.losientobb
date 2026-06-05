@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TecnoFuturo | Contacto</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">TecnoFuturo</span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tecnologias.html">Tecnologías</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="padding:3rem 2rem 2.5rem;">
+    <div class="hero-inner">
+      <h1>Contáctanos</h1>
+      <p>¿Tienes dudas o comentarios? Escríbenos y te responderemos a la brevedad.</p>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start;">
+
+      <div>
+        <h2 class="seccion-titulo">Envíanos un Mensaje</h2>
+        <p class="seccion-subtitulo">Todos los campos son obligatorios.</p>
+
+        <div id="alerta" class="alerta" role="alert"></div>
+
+        <form id="miFormulario" action="https://formsubmit.co/data.losientobb@gmail.com" method="POST" onsubmit="validarFormulario(event)">
+          
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde TecnoFuturo">
+          <input type="hidden" name="_captcha" value="false"> <input type="hidden" name="_next" value="window.location.href"> <div class="form-wrap">
+            <div class="campo">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" autocomplete="name" />
+            </div>
+
+            <div class="campo">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" autocomplete="email" />
+            </div>
+
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <h2 class="seccion-titulo">Información</h2>
+        <p class="seccion-subtitulo">También puedes encontrarnos aquí.</p>
+
+        <div style="background:var(--blanco); border:1px solid var(--crema-oscura); border-radius:6px; padding:1.5rem; display:flex; flex-direction:column; gap:1.25rem;">
+          <div>
+            <strong style="font-family:'Playfair Display',serif;">Institución</strong><br>
+            <span style="color:var(--texto-claro); font-size:.92rem;">CBTIS No. 37 — Ciudad Obregón, Sonora</span>
+          </div>
+          <div>
+            <strong style="font-family:'Playfair Display',serif;">Materia</strong><br>
+            <span style="color:var(--texto-claro); font-size:.92rem;">Tecnologías de la Información y Comunicación</span>
+          </div>
+          <div>
+            <strong style="font-family:'Playfair Display',serif;">Proyecto</strong><br>
+            <span style="color:var(--texto-claro); font-size:.92rem;">Sitio web multipágina — Tecnologías Emergentes</span>
+          </div>
+          <div>
+            <strong style="font-family:'Playfair Display',serif;">Horario de respuesta</strong><br>
+            <span style="color:var(--texto-claro); font-size:.92rem;">Lunes a viernes, 8:00 – 15:00 hrs.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <nav class="footer-nav">
+        <a href="index.html">Inicio</a>
+        <a href="tecnologias.html">Tecnologías</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="calculadora.html">Calculadora</a>
+      </nav>
+      <p>TecnoFuturo &copy; <span id="anio"></span> — Proyecto escolar CBTIS No. 37</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contacto.js"></script>
+</body>
+</html>

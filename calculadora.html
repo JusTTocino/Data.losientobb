@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TecnoFuturo | Calculadora Solar</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style src="css/calculadora.css"> </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">TecnoFuturo</span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tecnologias.html">Tecnologías</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="hero" style="padding:3rem 2rem 2.5rem;">
+    <div class="hero-inner">
+      <h1>Calculadora de Energía Solar </h1>
+      <p>Estima cuánta energía pueden generar tus paneles solares según la potencia instalada y las horas de sol diarias.</p>
+    </div>
+  </section>
+
+
+  <section class="seccion">
+    <div class="calc-grid">
+
+      <div>
+        <h2 class="seccion-titulo">Calcular Producción</h2>
+        <p class="seccion-subtitulo">Ingresa los datos de tu sistema solar.</p>
+
+        <div class="calc-wrap">
+
+          <div class="campo">
+            <label for="potencia">Potencia instalada (kW)</label>
+            <input type="number" id="potencia" placeholder="Ej. 5" min="0" step="0.1" />
+          </div>
+
+          <div class="campo">
+            <label for="horas">Horas de sol al día</label>
+            <input type="number" id="horas" placeholder="Ej. 6 (Ciudad Obregón ≈ 7–8 h)" min="0" max="24" step="0.5" />
+          </div>
+
+          <div class="campo">
+            <label for="dias">Días del período</label>
+            <input type="number" id="dias" placeholder="Ej. 30 para un mes" min="1" max="365" value="30" />
+          </div>
+
+          <button class="btn btn-verde" onclick="calcular()">Calcular</button>
+
+          <div id="resultado-calc">
+            <div class="resultado-icon" id="res-icono"></div>
+            <p id="res-texto" style="font-size:1rem;"></p>
+            <span class="nivel-badge" id="res-badge"></span>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div>
+        <h2 class="seccion-titulo">¿Cómo funciona?</h2>
+        <p class="seccion-subtitulo">Fórmula y contexto del cálculo.</p>
+
+        <div class="explicacion">
+          <h3>Fórmula usada</h3>
+          <p>
+            <strong>kWh = Potencia (kW) × Horas de sol × Días</strong>
+          </p>
+          <br>
+          <h3>Ejemplo práctico</h3>
+          <ul>
+            <li>Sistema de <strong>5 kW</strong></li>
+            <li><strong>7 horas</strong> de sol (promedio Obregón)</li>
+            <li>Período de <strong>30 días</strong></li>
+            <li>Resultado: <strong>5 × 7 × 30 = 1 050 kWh/mes</strong></li>
+          </ul>
+          <br>
+          <h3>Contexto regional</h3>
+          <p>
+            Ciudad Obregón, Sonora, recibe entre 7 y 8 horas de sol pico al día en promedio anual — una de las zonas con mayor potencial solar de México. Un hogar promedio consume entre 300 y 600 kWh por mes.
+          </p>
+          <br>
+          <h3>Nota</h3>
+          <p>Este cálculo es una estimación teórica. La producción real depende de la eficiencia del panel, temperatura, sombreado y pérdidas del inversor.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="separador" style="margin-top:3rem;">✦ ✦ ✦</div>
+    <p style="text-align:center; margin-top:2rem;">
+      <a href="tecnologias.html#solar" class="btn btn-outline">Leer sobre energía solar</a>
+    </p>
+  </section>
+  <footer>
+    <div class="footer-inner">
+      <nav class="footer-nav">
+        <a href="index.html">Inicio</a>
+        <a href="tecnologias.html">Tecnologías</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="calculadora.html">Calculadora</a>
+      </nav>
+      <p> TecnoFuturo &copy; <span id="anio"></span> — Proyecto escolar CBTIS No. 37</p>
+    </div>
+  </footer>
+  <script src="js/calculadora.js"> </script>
+</body>
+</html>

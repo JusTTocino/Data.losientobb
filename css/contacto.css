@@ -1,0 +1,12 @@
+ .alerta {
+      display: none;
+      padding: .85rem 1.1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+      font-size: .92rem;
+      font-weight: 700;
+      border-left: 4px solid;
+    }
+    .alerta.error   { background:#fdf0e0; border-color:#c0622a; color:#7a3010; }
+    .alerta.exito   { background:#edf5e1; border-color:#5a6b3a; color:#3a4a1a; }
+    .alerta.visible { display: block; }
